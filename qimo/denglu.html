@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>叮叮当当屋</title>
+    <link rel="stylesheet" href="./CSS/denglu.css" class="">
+</head>
+<body>
+    <script src="./JS/denglu.js"></script>
+    <header>
+            <div class="nav">
+   <!-- 导航栏 -->
+                        <ul>
+                            <li class="active"><a href="./index.html">首页</a></li>
+                            <li><a href="./content.html">叮当屋</a></li>
+                            <li><a href="./denglu.html">登录</a></li>
+                            <li><a href="./zhuce.html">注册</a></li>
+                        </ul>
+               
+                </div>
+     
+      </header>
+        <div class="wrap">
+            <!-- 登录验证表单 -->
+                        <div class="logo">
+                            <img src="./img/house.png" alt=""  >
+                        </div>
+ 
+            <form id="myform" name="myform">
+                <div id="form" class="form">
+                    <div class="left">
+                        <img src="img/c2.png" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="right-con">
+                            <h1>USERS LOGIN</h1>
+                            <h3>User Name 用户名</h3>
+                            <input id="uname" name="uname" class="text" type="text">
+                            <h3>PassWord 密 码</h3>
+                            <input id="upwd" name="upwd" class="text" type="password">
+                            <div id="validate"style="color:red"></div>
+                            <button class="btn" type="button"onclick="checkForm()">LOGIN  登录</button>
+                            <button class="btn" type="reset" onclick="resetForm()">RESET  重置</button>
+                         
+                        </div>
+                    </div>
+                </div> 
+            </form>
+            </div>
+</body>
+ 
+ 
+ 
+ 
+ 
+</html>

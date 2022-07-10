@@ -1,0 +1,251 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    color: rgb(71, 67, 67);
+}
+/* 主体样式 */
+body {
+    width: 100%;
+    background:url(../img/back1.1.png) no-repeat center;
+    background-attachment:fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+ 
+/* 头部 */
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+width: 100%;
+/* z-index: 10; */
+padding: 20px 80px;
+box-sizing: border-box;
+display: flex;
+justify-content: space-between;
+align-items: center;
+/* color: rgb(17, 16, 16); */
+overflow: hidden;
+border-bottom: double white 1px;
+background-color:rgba(245, 241, 241, 0.5);
+}
+header ul{
+    padding-left: 1000px;
+    list-style: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }
+    
+   header ul li {
+      
+   font-size: 20px;
+       font-weight: 400;
+       margin-left: 2px;
+       transition: all .5s linear;
+       padding: 10px;
+       border-radius: 20px;
+       }
+   header ul li:hover {
+       background:rgba(193, 233, 189,0.5);
+       color: #4a2c79;
+       transform: scale(1.2);
+       }
+   header ul li.active {
+       background:rgba(193, 233, 189,0.5);
+       color: #2b1055;
+       
+       }
+ 
+     
+    a:link,a:visited{
+       color:rgb(17, 17, 17);
+       text-decoration:none;
+       }
+.ding{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    text-align: center;
+}
+/* 导航栏部分 */
+.nav{
+    padding-right: 50px ;
+   
+}
+.nav li{
+    padding-right: 15px;
+    font-family: 'Times New Roman',Times,serif;
+     
+     
+     
+}
+ 
+/* logo图标 */
+.logo{
+    position: absolute;
+    top:20px;
+    left: 40px;
+}
+.logo img{
+    width: 120px;
+    height:120px;
+    border-radius: 60px;
+}
+/*3D翻转*/
+.cartoon_1 {
+    transition: transform 2s
+        /*反转动画关键*/
+}
+ 
+.cartoon_1:hover {
+    transform: rotateY(360deg);
+}
+ 
+/* 侧边导航栏 */
+.shell {
+    position: fixed;
+    width: 100px;
+    /* height: 700px; */
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(221, 225, 96, 0.3);
+    border-radius: 10px;
+    transition: .3s;
+    overflow: hidden;
+    float: left;
+}
+/* 侧边导航栏图标 */
+.shell img{
+    position: relative;
+            width: 50px;
+            height: 50px;
+    
+        }
+/* 侧边导航栏a标签样式 */
+        .box{
+            display:flex;
+            height: 38px;
+            width: 75%;
+            margin: 19px;
+            border-radius: 5px;
+            transition: .3s;
+            color: rgb(215, 234, 45);
+        }
+/* 侧边导航栏展开后的模块 */
+        .box span{
+            position: relative;
+            padding-top: 20px;
+            padding-left: 8px;
+            font: 400 20px '';
+            opacity: 0;
+            transition: .1s;
+        }
+        /* 展开宽度  */
+        .shell:hover{
+            width: 240px;
+            /* height: 100%; */
+        }
+/* 展开后span样式 */
+        .shell:hover span{
+            opacity: 1;
+        }
+         /* 鼠标悬浮时a标签样式 */
+.box:hover{
+            background-color: rgb(197, 226, 83);
+            color: rgb(7, 7, 7);
+}
+.ding{
+    margin-top: 20px;
+    margin-left:250px;
+    width:1000px;
+    height:300px;
+    background-color: rgb(9, 9, 9);
+    background-size: 600px 200px;
+    border-radius: 5px;
+}
+.text{
+    font-family: '楷体';
+    font-style: italic;
+    font-size: large;
+    color:rgb(255, 255, 255)
+}
+.text1{
+    font-family: '楷体';
+    font-style: normal;
+    font-size: smaller;
+    color:rgb(90, 185, 239)
+}
+.p1{
+    font-family: '楷体';
+    font-style: normal;
+    font-size: smaller;
+    color:rgb(195, 141, 239)
+}
+.p2{
+    font-family: '楷体';
+    font-style: normal;
+    font-size: smaller;
+    color:rgb(217, 240, 41)
+}
+.p3{
+    font-family: '楷体';
+    font-style: normal;
+    font-size: smaller;
+    color:rgb(109, 244, 85)
+}
+.p4{
+    font-family: '楷体';
+    font-style: normal;
+    font-size: smaller;
+    color:rgb(237, 81, 143)
+}
+.p5{
+    font-family: '楷体';
+    font-style: normal;
+    font-size: smaller;
+    color:rgb(226, 245, 244)
+}
+.p6{
+    font-family: '楷体';
+    font-style: normal;
+    font-size: smaller;
+    color:rgb(252, 69, 28)
+}
+.p7{
+    font-family: '楷体';
+    font-style: normal;
+    font-size: smaller;
+    color:rgb(226, 245, 244)
+}
+.p8{
+    font-family: '楷体';
+    font-style: normal;
+    font-size: smaller;
+    color:rgb(252, 69, 28)
+}
+.work{
+    margin-top: 60px;
+    position: relative;
+    margin-left:15%;
+    width:1000px;
+    height:500px;
+    background-color: rgb(163, 204, 223);
+    border-radius: 35px;
+}
+.h{
+    font-family: "楷体";
+}
+.text2{
+    padding-top: 10px;
+    text-indent: 2em;
+    font-size: large;
+    font-family: "楷体";
+    text-align: left;
+
+}

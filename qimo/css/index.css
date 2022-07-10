@@ -1,0 +1,339 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    color: rgb(239, 242, 224);
+}
+/* 主体内容 样式 */
+.wrap{
+    width:100%;
+    background:url(../img/back4.png) no-repeat center;
+    /* filter: opacity(0.5); */
+    background-attachment:fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/* 头部样式 */
+header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+width: 100%;
+padding: 20px 80px;
+box-sizing: border-box;
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: #fff;
+overflow: hidden;
+border-bottom: double white 1px;
+background-color:rgba(245, 241, 241, 0.5);
+}
+header ul{
+    padding-left: 1000px;
+    list-style: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }
+    
+   header ul li {
+   font-size: 20px;
+       font-weight: 400;
+       margin-left: 2px;
+       transition: all .5s linear;
+       padding: 10px;
+       border-radius: 20px;
+       }
+   header ul li:hover {
+       background:rgba(193, 233, 189,0.5);
+       color: #4a2c79;
+       transform: scale(1.2);
+       }
+   header ul li.active {
+       background:rgba(193, 233, 189,0.5);
+       color: #2b1055;
+       }
+       header li::marker{
+        content: none;
+        }
+   a:link,a:visited{
+       color:rgb(17, 17, 17);
+       text-decoration:none;
+       }
+ 
+        /* 导航栏部分 */
+.nav{
+    padding-right: 50px ;
+   
+}
+.nav li{
+    padding-right: 15px;
+    font-family: 'Times New Roman',Times,serif;
+     
+     
+     
+}
+/* logo图标部分 */
+ 
+.logo{
+    position: absolute;
+    top:20px;
+    left: 40px;
+}
+.logo img{
+    width: 120px;
+    height:120px;
+    border-radius: 60px;
+}
+ 
+/*2D翻转*/
+.cartoon_0 {
+    transition: transform 2s
+        /*反转动画关键*/
+}
+/*利用hover设置鼠标移动效果*/
+.cartoon_0:hover {
+    transform: rotate(360deg);
+}
+ 
+@keyframes mycolor
+{
+0% {background-color:rgb(233, 243, 207);}
+30% {background-color:rgba(255,255,255,0.5)}
+60% {background-color:rgba(240, 212, 194, 0.9)}
+100% {background-color:rgba(182, 238, 226, 0.9);}
+}
+.mycolor:hover
+{
+animation: mycolor 5s linear;
+}
+ 
+/* 首页封面宣传语部分 */
+.banner{
+    width: 20%;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    /* 块级元素 */
+    grid-template-rows: 1fr 1fr;
+    /* padding-top: 10%;
+    padding-left: 45%; */
+}
+.desc,
+.name{
+    padding: 70px 10px;
+
+}
+
+.line{
+    width: 450px;
+    height: 2px;
+    background: #fff;
+}
+.text{
+    margin-top: 30px;
+    margin-left:30px;
+    width:500px;
+    height:150px;
+    background-image:linear-gradient(to top right,rgba(247, 240, 240, 0.6),rgba(44, 189, 230, 0.9));
+    border-radius: 45px;
+    
+}
+.text p{
+    margin-top: 20px;
+    font-style: oblique;
+    font-size:large;
+    font-family: "楷体";
+    line-height:30px ;
+    /* padding-top: 10px; */
+    
+}
+ 
+ 
+h1 {
+  
+    font-size: 90px;
+    font-family: 'Times New Roman',Times,serif;
+ 
+ 
+}
+.name p{
+    font-size: 60px;
+    font-family: 'Times New Roman',Times,serif;
+}
+ 
+    /* 整个百叶窗占的布局 */
+.content{
+ 
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.box{
+width:100%;
+height: 100%;
+border:2px solid #FFF;
+background-color:rgba(255,255,255,0.3);
+box-shadow:5px 5px 7px rgba(255,255,255,0.5);
+border-bottom: 0;
+}
+.box li{
+float:left;
+position:relative;
+width:180px; 
+/* 未悬停时默认的 单张 图片宽/高度 */
+height: 100%; 
+box-shadow:0 0 25px #000000;
+transition:all 0.5s;
+}
+.box img{
+    height: 100%;
+    width: 500px;
+ 
+}
+/* 百叶窗图片下的文字部分 */
+.box li .text{
+position:absolute;
+left:0;
+bottom:0;
+font-size:26px;
+color:#FFF;
+width:100%;
+height:60px;
+text-align:center;
+line-height:30px;
+background:#000;
+background-color:rgba(177, 166, 166, 0.7);
+}
+.box:hover li{
+/* 鼠标经过某张图片时其他图片的样式 */
+width: 180px;
+}
+ 
+/* 鼠标经过时的li  */
+.box li:hover{
+width:460px;
+}
+/* 留言板部分 */
+.message{
+       width: 100%;
+       height: 550px;
+       /* height: 100%; */
+       display: flex;
+       /* background: rgb(209, 158, 158); */
+ 
+ 
+ 
+}
+.message_content {
+    width: 1800px;
+    height: 550px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+}
+.message textarea {
+    /* 文本框内的格式 */
+    background: rgb(16, 15, 15);
+    height: 400px;
+    /* height: 80%; */
+    padding: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 0;
+    /* background:url(..img/) */
+   
+ 
+}
+/* 输入留言的部分 */
+.ta{
+  
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+    margin-left: 50px;
+    margin-right: 50px;
+ 
+}
+ 
+ 
+.left {
+    /* background: rgb(219, 180, 180); */
+    width: 900px;
+    height: 100%;
+    /* margin: 10px; */
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+}
+ 
+/* 展示留言的部分 */
+.right {
+    width: 500px;
+ 
+    height: 600px;
+    background: rgba(23, 22, 22, 0.9);
+    float:right;
+    display:flex;
+    padding-right: 0px;
+    margin: 20px;
+ 
+}
+ 
+.right-con {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* 将对象作为弹性伸缩盒显示 */
+    text-align: center;
+}
+.right-con ul{
+    height: 100%;
+    width: 500px;
+    padding-top: 50px;
+    padding-right: 10px;
+    margin-top: 10px;
+   background-color: rgba(9, 9, 9, 0.5) ;
+ 
+}
+.right-con ul li{
+    padding-top: 20px;
+}
+li::marker{
+    content: '>'
+}
+/* 为按钮设置效果 */
+/* 按钮 */
+.anniu{
+    padding-left: 170px;
+  }
+button {
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 0 5px rgb(187, 185, 185);
+    background-color:rgba(255,255,255,0.8);
+    border: none;
+    font-size: 18px;
+    color: rgb(20, 18, 18);
+    font-family: 'Times New Roman',Times,serif;
+    padding:10px;
+    width: 160px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    /* overflow: hidden; */
+    cursor: pointer;
+}
+button:hover {background-color:rgba(141,211,141,0.5)}
+button:active{
+    background-color: #606460;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+ 

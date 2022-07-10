@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>叮叮当当屋</title>
+    <link rel="stylesheet" href="css/index.css" >
+ 
+</head>
+ 
+<body>
+  <script src="./JS/index.js"></script>
+  <header>
+        <div class="nav">
+ 
+                    <ul>
+                        <li class="active"><a href="">首页</a></li>
+                        <li><a href="content.html">叮当屋</a></li>
+                        <li><a href="./denglu.html">登录</a></li>
+                        <li><a href="./zhuce.html">注册</a></li>
+                    </ul>
+           
+            </div>
+ 
+  </header>
+    <div class="wrap">
+            <div class="logo">
+                    <img src="./img/house.png" alt="" class="cartoon_0" >
+                </div>
+        <div class="banner">
+            <div class="desc">
+                    <div class="name">
+                            <h1> 生活</h1><br>
+                            <div class="line"></div><br>
+                    </div>
+                    
+            </div>
+        </div>
+            <div class="content">
+               
+                <ul class="box">
+                        <li>
+                        <img src="img/cloth.png" alt="">
+                        <div class="text">
+                        OOTD 
+                        </div>
+                        </li>
+                        <li>
+                        <img src="img/tuishu.png" alt="">
+                        <div class="text">
+                        TUIIIII shu
+                        </div>
+                        <li>
+                        <img src="img/to.png" alt="">
+                        <div class="text">
+                        ding~便当日记
+                        </div>
+                        </li>
+                       </li>
+                        <li>
+                        <img src="img/zhuiju.png" alt="">
+                        <div class="text">
+                        追剧>>>
+                        </div>
+                        </li>
+                        <li>
+                        <img src="img/music.png" alt="">
+                        <div class="text">
+                        一起听歌吧啦啦啦啦啦
+                        </div>
+                        </li>
+                        <li>
+                        <img src="img/painting.png" alt="">
+                        <div class="text">
+                        艺术家的诞生@
+                        </div>
+                        </li>
+                        </ul>
+            </div>
+<!-- 留言板部分 -->
+            <div class="message">
+                <div class="message_content">
+ 
+                    <div class="left">
+                <div class="ta">
+                    <textarea class="text" name="text" id="text" cols="100" rows="100" placeholder="——————————dd垃圾桶24h营业中——————"></textarea>
+                </div>
+                    <div class="anniu">
+                    <button class="btn" name="btn">发布</button>
+                    <button id="delete">删除</button>
+                    </div>
+ 
+                    </div>
+ 
+                    <div class="right">
+                        <div class="right-con">
+                          <ul id="ul" class="ul">
+                          </ul>
+                        </div>
+                    </div>
+ 
+                </div>
+                  
+ 
+ 
+            </div>
+            
+    </div>
+ 
+ <script>
+ var btn=document.querySelector('button');
+var text=document.querySelector('textarea');
+// var ul=document.querySelector('ul');
+var ul=document.getElementById('ul');
+btn.onclick=function(){
+    if (text.value==''){
+        alert('您没输入内容');
+        return false;//终止操作
+    }
+    else{
+     var li=document.createElement('li');
+        li.innerHTML=text.value;
+        ul.insertBefore(li,ul.children[0]);
+    }
+     
+}
+// 删除留言
+// var ul2=document.querySelector('ul');
+    // var btn=document.querySelector('button');
+    var btnt=document.getElementById('delete');
+    btnt.onclick=function(){
+        if(ul.children.length==0){
+            this.disabled=true;
+        }
+        else{
+            ul.removeChild(ul.children[0]);
+        }
+         
+    }
+ 
+  
+ </script> 
+ 
+ 
+ 
+ 
+</body>
+</html>

@@ -1,0 +1,243 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    color: rgb(71, 67, 67);
+}
+ 
+body {
+    overflow: hidden;
+}
+/* 页面主体部分样式设置 */
+ 
+.wrap {
+    /* 备选方案2 */
+    width: 100%;
+    height: 100vh;
+    /* 将对象作为弹性伸缩盒展示 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(to right top, #ccd5d9, #b4c9d3, #9dbdce, #85b1c9, #6ca5c5, #61a6bf, #5aa7b8, #57a7af, #7ab0a3, #9eb89f, #bbbea8, #cfc6b9); */
+    background-image: linear-gradient(to right top, #98c7eb, #81baf5, #77aafd, #7f97ff, #947ffb, #7d89ff, #6492ff, #4c9aff, #00baff, #3dd4fc, #81ebf3, #bdfef1);
+}
+.wrap{
+    width:100%;
+    background:url(../img/back1.1.png) no-repeat center;
+    /* 固定背景图片达到视觉差效果 */
+    background-attachment:fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+/* 头部效果 */
+header {
+    /* 固定导航栏 */
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+width: 100%;
+/* z-index: 10; */
+padding: 20px 100px;
+box-sizing: border-box;
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: #fff;
+overflow: hidden;
+border-bottom: double white 1px;
+background-color:rgba(245, 241, 241, 0.5);
+}
+header ul{
+    padding-left: 1000px;
+    list-style: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }
+    
+   header ul li {
+   font-size: 20px;
+       font-weight: 400;
+       margin-left: 2px;
+       transition: all .5s linear;
+       padding: 10px;
+       border-radius: 20px;
+       }
+   header ul li:hover {
+       background:rgba(193, 233, 189,0.5);
+       color: #4a2c79;
+       transform: scale(1.2);
+       }
+   header ul li.active {
+       background:rgba(193, 233, 189,0.5);
+       color: #2b1055;
+       }
+   a:link,a:visited{
+       color:rgb(17, 17, 17);
+       text-decoration:none;
+       }
+/* 导航栏部分 */
+.nav{
+    padding-right: 50px ;
+   
+}
+.nav li{
+    padding-right: 15px;
+    font-family: 'Times New Roman',Times,serif;
+   
+}
+ 
+/* logo图标部分 */
+.logo{
+    position: absolute;
+    top:20px;
+    left: 40px;
+}
+.logo img{
+    width: 120px;
+    height:120px;
+    border-radius: 60px;
+}
+ 
+/* 注册表单样式 */
+ 
+
+.myform{
+    padding-top: 120px;
+    width:100%;
+   
+ }
+.form {
+    padding-top: 120px;
+    width: 800px;
+    height: 550px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    
+}
+/* form左侧  图片部分*/
+.left {
+    width: 400px;
+    height: 500px;
+}
+ 
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+/* form右侧 表单右侧 */
+.right {
+    width: 400px;
+    height: 525px;
+    background: rgba(27, 26, 26, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.right-con {
+    
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+/* 生日选择年月日部分 */
+.option{
+    /*用div的样式代替select的样式*/
+  
+    /* border-radius: 15px; */
+     
+    /*盒子阴影修饰作用*/
+     
+    box-shadow: 0 0 5px #ccc;
+     
+    border: 1px solid #cccccc;
+     
+    position: relative;
+     
+    }
+.option select{
+    /*清除select的边框样式*/
+    color: black;
+     
+ 
+    border: none;
+     
+    /*清除select聚焦时候的边框颜色*/
+     
+    outline: none;
+     
+    /*将select的宽高等于div的宽高*/
+     
+    width: 100%;
+     
+    height: 20px;
+     
+    line-height: 30px;
+     
+    /*隐藏select的下拉图标*/
+     
+    appearance: none;
+     
+    -webkit-appearance: none;
+     
+    -moz-appearance: none;
+     
+    /*通过padding-left的值让文字居中*/
+     
+    padding-left: 20px;
+     
+    }
+/* 注册 标题 */
+h1 {
+    font-size: 25px;
+    color: #937ee2;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+/* 注册 所填内容标题 */
+h3 {
+    font-size: 10px;
+    font-weight: 400;
+    color: #947ffb ;
+    padding: 10px 0;
+}
+/* 填入表格的文字样式 */
+.text {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #70b4e3;
+    color: #f7f2f2;
+    background-color: rgba(0, 0, 0, 0);
+}
+/* 按钮样式 */
+.btns{
+    display:flex;
+}
+.btn {
+    width: 40%;
+    height: 20px;
+    border-radius: 10px;
+    border: 20px;
+    color: rgb(6, 6, 6);
+    font-size: 10px;
+    cursor: pointer;
+    margin: 15px;
+    
+    position:relative;
+    
+    background-image: linear-gradient(120deg,#d6cbcb 20%,#f0c2c2 100%)
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
