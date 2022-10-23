@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"helloworlddma\startup_stm32f103xb.o"
+"helloworlddma\main.o"
+"helloworlddma\gpio.o"
+"helloworlddma\dma.o"
+"helloworlddma\usart.o"
+"helloworlddma\stm32f1xx_it.o"
+"helloworlddma\stm32f1xx_hal_msp.o"
+"helloworlddma\stm32f1xx_hal_gpio_ex.o"
+"helloworlddma\stm32f1xx_hal_tim.o"
+"helloworlddma\stm32f1xx_hal_tim_ex.o"
+"helloworlddma\stm32f1xx_hal_uart.o"
+"helloworlddma\stm32f1xx_hal.o"
+"helloworlddma\stm32f1xx_hal_rcc.o"
+"helloworlddma\stm32f1xx_hal_rcc_ex.o"
+"helloworlddma\stm32f1xx_hal_gpio.o"
+"helloworlddma\stm32f1xx_hal_dma.o"
+"helloworlddma\stm32f1xx_hal_cortex.o"
+"helloworlddma\stm32f1xx_hal_pwr.o"
+"helloworlddma\stm32f1xx_hal_flash.o"
+"helloworlddma\stm32f1xx_hal_flash_ex.o"
+"helloworlddma\stm32f1xx_hal_exti.o"
+"helloworlddma\system_stm32f1xx.o"
+--strict --scatter "HelloWorldDMA\HelloWorldDMA.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HelloWorldDMA.map" -o HelloWorldDMA\HelloWorldDMA.axf
