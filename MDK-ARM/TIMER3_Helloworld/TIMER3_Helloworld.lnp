@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"timer3_helloworld\startup_stm32f103xb.o"
+"timer3_helloworld\main.o"
+"timer3_helloworld\gpio.o"
+"timer3_helloworld\tim.o"
+"timer3_helloworld\usart.o"
+"timer3_helloworld\stm32f1xx_it.o"
+"timer3_helloworld\stm32f1xx_hal_msp.o"
+"timer3_helloworld\stm32f1xx_hal_gpio_ex.o"
+"timer3_helloworld\stm32f1xx_hal_tim.o"
+"timer3_helloworld\stm32f1xx_hal_tim_ex.o"
+"timer3_helloworld\stm32f1xx_hal.o"
+"timer3_helloworld\stm32f1xx_hal_rcc.o"
+"timer3_helloworld\stm32f1xx_hal_rcc_ex.o"
+"timer3_helloworld\stm32f1xx_hal_gpio.o"
+"timer3_helloworld\stm32f1xx_hal_dma.o"
+"timer3_helloworld\stm32f1xx_hal_cortex.o"
+"timer3_helloworld\stm32f1xx_hal_pwr.o"
+"timer3_helloworld\stm32f1xx_hal_flash.o"
+"timer3_helloworld\stm32f1xx_hal_flash_ex.o"
+"timer3_helloworld\stm32f1xx_hal_exti.o"
+"timer3_helloworld\stm32f1xx_hal_uart.o"
+"timer3_helloworld\system_stm32f1xx.o"
+--strict --scatter "TIMER3_Helloworld\TIMER3_Helloworld.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TIMER3_Helloworld.map" -o TIMER3_Helloworld\TIMER3_Helloworld.axf
